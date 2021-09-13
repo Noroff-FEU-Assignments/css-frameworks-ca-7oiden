@@ -1,0 +1,27 @@
+//custom
+$colorPrimary: #e92569;
+$colorSecondary: #ffffff;
+$colorNavbar: #efefef;
+$colorContrastText: #0a0a0a;
+$colorLightText: #767676;
+$colorDarkText: #0a0a0a;
+$colorBackgroundGrad1: #ffffff;
+$colorBackgroundGrad2: #e5e5e5;
+
+$fontPrimary: "Lato";
+$fontMainHeadings: "Playfair Display";
+
+$navbar-brand-font-size: 1.25rem;
+
+$navbar-light-color: #767676;
+
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-border-color: none;
+$navbar-toggler-border-radius: 0;
+$navbar-toggler-focus-width: 0;
+$navbar-toggler-font-size: 2rem;
+
+$container-padding-x: 0;
+
+
+@import "~bootstrap/scss/bootstrap";
