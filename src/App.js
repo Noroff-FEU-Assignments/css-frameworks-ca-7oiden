@@ -11,16 +11,14 @@ import theme from "./styles/theme";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 
-import Form from "react-bootstrap/Form";
-
 import { StyledNavbar } from "./components/navbar/StyledNavbar";
 import { StyledNavLink } from "./components/navbar/StyledNavbar";
 import { StyledButton } from "./components/navbar/StyledNavbar";
+import { StyledForm } from "./components/navbar/StyledNavbar";
 import { StyledFormControl } from "./components/navbar/StyledNavbar";
 import Nav from "react-bootstrap/Nav";
 import Footer from "./components/footer/Footer";
 import FooterItem from "./components/footer/FooterItem";
-
 
 function App() {
   return (
@@ -43,7 +41,7 @@ function App() {
                     <StyledNavLink to="/News">News</StyledNavLink>
                     <StyledNavLink to="/Contact">Contact</StyledNavLink>
                   </Nav>
-                  <Form className="d-flex">
+                  <StyledForm className="d-flex">
                     <StyledFormControl
                       type="search"
                       placeholder="Search"
@@ -51,7 +49,7 @@ function App() {
                       aria-label="Search"
                     />
                     <StyledButton>Go</StyledButton>
-                  </Form>
+                  </StyledForm>
                 </Navbar.Collapse>
               </Container>
             </StyledNavbar>

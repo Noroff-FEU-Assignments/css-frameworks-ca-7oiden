@@ -2,26 +2,34 @@ import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import FormControl from "react-bootstrap/FormControl";
+import Form from "react-bootstrap/Form";
 
 import styled from "styled-components";
 
 export const StyledNavbar = styled(Navbar)`
   background-color: ${(props) => props.theme.colorNavbar};
   font-family: ${(props) => props.theme.MainHeadings};
-  padding: 1rem 5%;
+  padding: 1rem 0;
+
 `;
 
 export const StyledNavLink = styled(NavLink)`
   color: ${(props) => props.theme.colorDarkText};
   text-decoration: none;
-  margin-left: 1rem;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 7.5%;
   border-radius: 3px;
+  margin: 0 0 1.5rem 0;
+
+  @media (min-width: 992px) {
+    margin: 0 0 0 2rem;
+    padding: 0.25rem 1rem;
+  }
 
   &:hover {
     color: ${(props) => props.theme.colorDarkText};
     background-color: ${(props) => props.theme.colorSecondary};
   }
+
   &::active {
     color: ${(props) => props.theme.colorDarkText};
     background-color: ${(props) => props.theme.colorSecondary};
@@ -35,6 +43,14 @@ export const StyledButton = styled(Button)`
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
+`;
+
+export const StyledForm = styled(Form)`
+  padding: 1rem 7.5%;
+
+  @media (min-width: 992px) {
+    padding: 0 5%;
+  }
 `;
 
 export const StyledFormControl = styled(FormControl)`

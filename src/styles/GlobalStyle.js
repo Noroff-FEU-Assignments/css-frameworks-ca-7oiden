@@ -32,12 +32,20 @@ const Globalstyle = createGlobalStyle`
         color: ${(props) => props.theme.colorPrimary} !important;
         font-style: italic;
         font-weight: bold;
-        margin: 0 2rem 0 0;
-        padding: 0;
+        margin: 0 2rem 0 7.5%;
+
+        @media (min-width: 992px) {
+    margin: 0 2rem 0 5%;
+  }
+        
     }
 
     .d-flex {
         color: black;
+    }
+
+    .navbar-toggler {
+        padding: 0 7.5% 0 0;
     }
 `;
 
