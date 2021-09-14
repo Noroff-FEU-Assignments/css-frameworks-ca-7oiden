@@ -2,7 +2,7 @@ import React from "react";
 
 function AccordionLinks() {
   return (
-    <div className="links-container">
+    <div className="content-links">
       <div>Share</div>
       <div>
         <i class="fab fa-facebook-f"></i>

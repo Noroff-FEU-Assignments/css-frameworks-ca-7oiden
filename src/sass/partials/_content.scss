@@ -1,0 +1,39 @@
+.content-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+    padding-top: 1rem;
+  }
+}
+
+.content-links div {
+  text-transform: uppercase;
+  color: $colorDarkText;
+  font-size: 2rem;
+
+  @media (min-width: 992px) {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+
+  &:first-child {
+    font-size: 1rem;
+  }
+}
+
+.content-text {
+  margin: 0;
+  padding: 0;
+}
+
+.content-image {
+  height: 175px;
+
+  @media (min-width: 992px) {
+    height: 150px;
+  }
+}

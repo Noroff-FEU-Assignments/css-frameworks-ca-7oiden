@@ -9,27 +9,41 @@ import ContentText from "../acc-tab-content/ContentText";
 
 function TabsCustomized() {
   return (
-    <Tabs
-      defaultActiveKey="first"
-      id="uncontrolled-tab-example"
-      className="mb-3"
-    >
-      <Tab eventKey="first" title="First">
-        <ContentText />
-        <img src={TabImg1} alt="" className="accordion-image" />
-        <ContentLinks />
-      </Tab>
-      <Tab eventKey="second" title="Second">
-        <ContentText />
-        <img src={TabImg2} alt="" className="accordion-image" />
-        <ContentLinks />
-      </Tab>
-      <Tab eventKey="third" title="Third">
-        <ContentText />
-        <img src={TabImg3} alt="" className="accordion-image" />
-        <ContentLinks />
-      </Tab>
-    </Tabs>
+    <div className="tabs-container">
+      <Tabs
+        defaultActiveKey="first"
+        id="uncontrolled-tab-example"
+        className="mb-3"
+      >
+        <Tab eventKey="first" title="First">
+          <div className="tab-body">
+            <img src={TabImg1} alt="" className="content-image" />
+            <div className="tab-body__container">
+              <ContentText />
+              <ContentLinks />
+            </div>
+          </div>
+        </Tab>
+        <Tab eventKey="second" title="Second">
+          <div className="tab-body">
+            <img src={TabImg2} alt="" className="content-image" />
+            <div className="tab-body__container">
+              <ContentText />
+              <ContentLinks />
+            </div>
+          </div>
+        </Tab>
+        <Tab eventKey="third" title="Third">
+          <div className="tab-body">
+            <img src={TabImg3} alt="" className="content-image" />
+            <div className="tab-body__container">
+              <ContentText />
+              <ContentLinks />
+            </div>
+          </div>
+        </Tab>
+      </Tabs>
+    </div>
   );
 }
 

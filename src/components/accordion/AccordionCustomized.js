@@ -8,32 +8,34 @@ import ContentText from "../acc-tab-content/ContentText";
 
 function AccordionCustomized() {
   return (
-    <Accordion defaultActiveKey="0">
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>First</Accordion.Header>
-        <Accordion.Body>
-          <ContentText />
-          <img src={TabImg1} alt="" className="accordion-image" />
-          <ContentLinks />
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Second</Accordion.Header>
-        <Accordion.Body>
-          <ContentText />
-          <img src={TabImg2} alt="" className="accordion-image" />
-          <ContentLinks />
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>Third</Accordion.Header>
-        <Accordion.Body>
-          <ContentText />
-          <img src={TabImg3} alt="" className="accordion-image" />
-          <ContentLinks />
-        </Accordion.Body>
-      </Accordion.Item>
-    </Accordion>
+    <div className="accordion-container">
+      <Accordion defaultActiveKey="0">
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>First</Accordion.Header>
+          <Accordion.Body>
+            <ContentText />
+            <img src={TabImg1} alt="" className="content-image" />
+            <ContentLinks />
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>Second</Accordion.Header>
+          <Accordion.Body>
+            <ContentText />
+            <img src={TabImg2} alt="" className="content-image" />
+            <ContentLinks />
+          </Accordion.Body>
+        </Accordion.Item>
+        <Accordion.Item eventKey="2">
+          <Accordion.Header>Third</Accordion.Header>
+          <Accordion.Body>
+            <ContentText />
+            <img src={TabImg3} alt="" className="content-image" />
+            <ContentLinks />
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+    </div>
   );
 }
 
