@@ -25,6 +25,7 @@ const Globalstyle = createGlobalStyle`
 
     .wrapper {
         flex: 1 0 auto;
+        position: relative;
     }
 
     .brand {
@@ -35,11 +36,10 @@ const Globalstyle = createGlobalStyle`
         margin: 0 2rem 0 7.5%;
 
         @media (min-width: 992px) {
-    margin: 0 2rem 0 5%;
+        margin: 0 2rem 0 5%;
   }
+}
         
-    }
-
     .d-flex {
         color: black;
     }
@@ -47,6 +47,12 @@ const Globalstyle = createGlobalStyle`
     .navbar-toggler {
         padding: 0 7.5% 0 0;
     }
+
+    img {
+        height: auto;
+    }
+
+  
 `;
 
 export default Globalstyle;

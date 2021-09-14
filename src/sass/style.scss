@@ -23,5 +23,28 @@ $navbar-toggler-font-size: 2rem;
 
 $container-padding-x: 0;
 
+$carousel-indicator-height: 30px;
+$carousel-indicator-width: 30px;
+$carousel-indicator-spacer: 1rem;
+$carousel-indicator-active-bg: #e92569;
+$carousel-indicator-opacity: 0.5;
+
+$accordion-bg: #e5e5e5;
+$accordion-color: #e92569;
+$accordion-button-bg: white;
+$accordion-button-active-bg: white;
+$accordion-button-active-color: #e92569;
+$accordion-border-radius: 10px;
+//$accordion-inner-border-radius: 10px;
+//$accordion-border-color: none;
+$accordion-button-focus-border-color: #e92569;
+$accordion-button-icon: none;
+$accordion-button-active-icon: none;
+$accordion-button-color: #e92569;
+$accordion-border-width: 0;
+//$accordion-border-color: none;
 
 @import "~bootstrap/scss/bootstrap";
+
+@import "./partials/accordion";
+@import "./partials/carousel";

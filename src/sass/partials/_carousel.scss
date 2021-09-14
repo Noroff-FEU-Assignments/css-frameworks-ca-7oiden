@@ -1,0 +1,16 @@
+.carousel-image {
+  height: 300px;
+  background-position: center;
+
+  @media (min-width: 992px) {
+    height: 460px;
+  }
+}
+
+.carousel-indicators > * {
+  background-color: white !important;
+}
+
+.carousel-indicators > * {
+  border-radius: 10px !important;
+}

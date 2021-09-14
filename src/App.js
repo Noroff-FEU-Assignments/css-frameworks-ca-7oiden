@@ -2,7 +2,7 @@ import "./sass/style.scss";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
-import CustomContainer from "./components/layout/CustomContainer";
+import { FooterContainer } from "./components/layout/CustomContainers";
 import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";
@@ -26,7 +26,6 @@ function App() {
       <Globalstyle />
       <div className="wrapper">
         <Router>
-          <div>
             <StyledNavbar className="navbar" variant="light" expand="lg">
               <Container fluid>
                 <Navbar.Brand href="#home" className="brand">
@@ -67,16 +66,14 @@ function App() {
                 <Home />
               </Route>
             </Switch>
-          </div>
         </Router>
-        <CustomContainer></CustomContainer>
       </div>
       <Footer>
-        <CustomContainer>
+        <FooterContainer>
           <FooterItem>Icons</FooterItem>
           <FooterItem>hello@yay.com</FooterItem>
           <FooterItem>Copyright 2020</FooterItem>
-        </CustomContainer>
+        </FooterContainer>
       </Footer>
     </ThemeProvider>
   );

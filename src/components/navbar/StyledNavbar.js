@@ -10,7 +10,14 @@ export const StyledNavbar = styled(Navbar)`
   background-color: ${(props) => props.theme.colorNavbar};
   font-family: ${(props) => props.theme.MainHeadings};
   padding: 1rem 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  width: 100%;
+  z-index: 100;
 
+  @media (min-width: 992px) {
+    box-shadow: none;
+  }
 `;
 
 export const StyledNavLink = styled(NavLink)`
@@ -18,7 +25,7 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   padding: 0.5rem 7.5%;
   border-radius: 3px;
-  margin: 0 0 1.5rem 0;
+  margin: 0 0 1rem 0;
 
   @media (min-width: 992px) {
     margin: 0 0 0 2rem;
@@ -46,7 +53,7 @@ export const StyledButton = styled(Button)`
 `;
 
 export const StyledForm = styled(Form)`
-  padding: 1rem 7.5%;
+  padding: 0 7.5% 2rem 7.5%;
 
   @media (min-width: 992px) {
     padding: 0 5%;
