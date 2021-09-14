@@ -1,14 +1,15 @@
 import React from "react";
-import AccordionCustom from "../../components/accordion/AccordionCustom";
-import CarouselCustom from "../../components/carousel/CarouselCustom";
+import AccordionCustomized from "../../components/accordion/AccordionCustomized";
+import CarouselCustomized from "../../components/carousel/CarouselCustomized";
 import MainContainer from "../../components/layout/MainContainer";
+import TabsCustomized from "../../components/tabs/TabsCustomized";
 import MainHeading from "../../components/typography/MainHeading";
 import MainText from "../../components/typography/MainText";
 
 function Home() {
   return (
     <>
-      <CarouselCustom></CarouselCustom>
+      <CarouselCustomized></CarouselCustomized>
       <MainContainer>
         <MainHeading>We do YAY things</MainHeading>
         <MainText>
@@ -19,7 +20,8 @@ function Home() {
           euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus
           a, varius eget massa.
         </MainText>
-        <AccordionCustom />
+        <AccordionCustomized />
+        <TabsCustomized />
       </MainContainer>
     </>
   );

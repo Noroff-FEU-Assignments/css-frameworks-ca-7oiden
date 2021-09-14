@@ -13,14 +13,14 @@ import News from "./pages/news/News";
 
 import Footer from "./components/footer/Footer";
 //import FooterItem from "./components/footer/FooterItem";
-import NavbarCustom from "./components/navbar/NavbarCustom";
+import NavbarCustomized from "./components/navbar/NavbarCustomized";
 
 function App() {
   return (
     <>
       <div className="wrapper">
         <Router>
-          <NavbarCustom />
+          <NavbarCustomized />
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
