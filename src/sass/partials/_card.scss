@@ -1,0 +1,33 @@
+.card {
+  //max-width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  height: 50%;
+  border-radius: 10px 10px 0 0;
+  background-position: center;
+}
+
+.card-body {
+  padding: 1rem 2rem;
+}
+
+.card-title {
+  color: $colorDarkText;
+  font-size: 1.25rem;
+}
+
+.card-button {
+  background-color: $colorPrimary;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  margin-top: 25px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-right: 32px solid $colorLightText;
+}

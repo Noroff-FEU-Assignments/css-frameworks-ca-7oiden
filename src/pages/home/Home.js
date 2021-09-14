@@ -1,7 +1,6 @@
 import React from "react";
 import AccordionCustomized from "../../components/accordion/AccordionCustomized";
 import CarouselCustomized from "../../components/carousel/CarouselCustomized";
-import MainContainer from "../../components/layout/MainContainer";
 import TabsCustomized from "../../components/tabs/TabsCustomized";
 import MainHeading from "../../components/typography/MainHeading";
 import MainText from "../../components/typography/MainText";
@@ -10,7 +9,7 @@ function Home() {
   return (
     <>
       <CarouselCustomized></CarouselCustomized>
-      <MainContainer>
+      <div className="main-container">
         <MainHeading>We do YAY things</MainHeading>
         <MainText>
           Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a
@@ -22,7 +21,7 @@ function Home() {
         </MainText>
         <AccordionCustomized />
         <TabsCustomized />
-      </MainContainer>
+      </div>
     </>
   );
 }
