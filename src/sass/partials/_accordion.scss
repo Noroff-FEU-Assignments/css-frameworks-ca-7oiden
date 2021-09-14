@@ -1,16 +1,11 @@
 .accordion {
   border: none;
   border-radius: 10px;
-  color: $colorLightText;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   margin-bottom: 100px;
 }
 
 .accordion-button {
-  font-size: 1.1875rem;
-}
-
-.accordion:last-child {
   font-size: 1.1875rem;
 }
 

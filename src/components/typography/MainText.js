@@ -1,7 +1,10 @@
-import styled from "styled-components";
+import React from 'react'
 
-const MainText = styled.p`
-  color: ${(props) => props.theme.colorLightText};
-`;
+function MainText(props) {
+  return (
+    <p>{props.children}</p>
+  )
+}
 
-export default MainText;
+export default MainText
+

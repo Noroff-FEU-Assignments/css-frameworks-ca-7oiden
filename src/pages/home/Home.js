@@ -1,7 +1,7 @@
 import React from "react";
 import AccordionCustom from "../../components/accordion/AccordionCustom";
 import CarouselCustom from "../../components/carousel/CarouselCustom";
-import { MainContainer } from "../../components/layout/CustomContainers";
+import MainContainer from "../../components/layout/MainContainer";
 import MainHeading from "../../components/typography/MainHeading";
 import MainText from "../../components/typography/MainText";
 

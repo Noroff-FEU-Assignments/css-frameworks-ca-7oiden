@@ -1,11 +1,7 @@
-import styled from "styled-components";
+import React from "react";
 
-const MainHeading = styled.h1`
-  font-family: ${(props) => props.theme.fontMainHeadings};
-  font-size: 2.125rem;
-  color: ${(props) => props.theme.colorPrimary};
-  margin-top: 50px;
-  padding-bottom: 25px;
-`;
+function MainHeading(props) {
+  return <h1>{props.children}</h1>;
+}
 
 export default MainHeading;

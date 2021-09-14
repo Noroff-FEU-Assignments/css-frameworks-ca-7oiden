@@ -46,5 +46,10 @@ $accordion-border-width: 0;
 
 @import "~bootstrap/scss/bootstrap";
 
+@import "./partials/base";
+@import "./partials/layout";
+@import "./partials/typography";
 @import "./partials/accordion";
 @import "./partials/carousel";
+@import "./partials/navbar";
+@import "./partials/footer";

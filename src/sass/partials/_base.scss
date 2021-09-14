@@ -1,0 +1,39 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: $colorBackgroundGrad2;
+  font-family: $fontPrimary;
+  color: $colorLightText;
+  font-size: 1rem;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  position: relative;
+}
+
+img {
+  height: auto;
+}
+
+footer {
+  background-color: $colorSecondary;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}

@@ -1,7 +1,18 @@
-import styled from "styled-components";
+import React from "react";
 
-const Footer = styled.div`
-  background-color: ${(props) => props.theme.colorSecondary};
-`;
+function Footer() {
+  return (
+    <footer>
+      <div className="footer-container">
+        <div>
+          <i class="fab fa-vimeo-v"></i>
+          <i class="fab fa-youtube"></i>
+        </div>
+        <div>hello@yay.com</div>
+        <div>Copyright 2020</div>
+      </div>
+    </footer>
+  );
+}
 
-export default Footer; 
+export default Footer;

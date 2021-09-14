@@ -27,6 +27,7 @@ function StyledAccordion() {
           ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed
           condimentum mattis rhoncus.
           <img src={TabImg2} alt="" className="accordion-image" />
+          <AccordionLinks />
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
@@ -37,6 +38,7 @@ function StyledAccordion() {
           ullamcorper turpis. Cras vehicula pharetra lectus non maximus. Sed
           condimentum mattis rhoncus.
           <img src={TabImg3} alt="" className="accordion-image" />
+          <AccordionLinks />
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
