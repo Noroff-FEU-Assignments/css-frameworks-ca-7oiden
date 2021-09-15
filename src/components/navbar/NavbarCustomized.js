@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 
 function NavbarCustom() {
   return (
-    <Navbar variant="light" expand="lg">
+    <Navbar expand="lg">
       <div className="nav-container">
         <Navbar.Brand href="#home" className="brand">
           The YAY Company

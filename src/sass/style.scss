@@ -1,59 +1,49 @@
-//custom
-$colorPrimary: #e92569;
-$colorSecondary: #ffffff;
-$colorNavbar: #efefef;
-$colorContrastText: #0a0a0a;
-$colorLightText: #767676;
-$colorDarkText: #0a0a0a;
-$colorBackgroundGrad1: #ffffff;
-$colorBackgroundGrad2: #e5e5e5;
-$colorBorder: #d1d1d1;
+@import "./partials/custom";
 
-$fontPrimary: "Lato";
-$fontMainHeadings: "Playfair Display";
+//bootstrap variables overrides
 
+//brand
 $navbar-brand-font-size: 1.25rem;
 
-$navbar-light-color: #767676;
-
+//navbar
+$navbar-light-color: $colorLightText;
 $navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: none;
 $navbar-toggler-border-radius: 0;
 $navbar-toggler-focus-width: 0;
 $navbar-toggler-font-size: 2rem;
-$navbar-toggler-padding-y: 0;       
-$navbar-toggler-padding-x: 0; 
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
 
-$container-padding-x: 0;
-
+//carousel
 $carousel-indicator-height: 30px;
 $carousel-indicator-width: 30px;
 $carousel-indicator-spacer: 1rem;
 $carousel-indicator-active-bg: $colorPrimary;
 $carousel-indicator-opacity: 0.5;
 
+//accordion
 $accordion-bg: #e5e5e5;
 $accordion-color: $colorPrimary;
 $accordion-button-bg: white;
 $accordion-button-active-bg: white;
 $accordion-button-active-color: $colorPrimary;
 $accordion-border-radius: 10px;
-//$accordion-inner-border-radius: 10px;
-//$accordion-border-color: none;
 $accordion-button-focus-border-color: $colorPrimary;
 $accordion-button-icon: none;
 $accordion-button-active-icon: none;
 $accordion-button-color: $colorPrimary;
-$accordion-border-width: 0;
-//$accordion-border-color: none;
+$accordion-border-width: 1px;
+$accordion-border-color: $colorBackgroundGrad2;
 
+//tabs
 $nav-tabs-link-active-color: $colorLightText;
 $nav-tabs-border-radius: 10px;
 $nav-tabs-border-width: 0;
-
 $nav-link-color: $colorPrimary;
 $nav-link-hover-color: none;
 
+//pagination
 $pagination-bg: $colorSecondary;
 $pagination-color: $colorPrimary;
 $pagination-active-color: $colorSecondary;
@@ -67,6 +57,7 @@ $pagination-hover-color: $colorSecondary;
 $pagination-hover-bg: $colorPrimary;
 $pagination-hover-border-color: $colorPrimary;
 
+//form
 $form-label-margin-bottom: 0.25rem;
 $form-check-input-bg: $colorPrimary;
 $form-check-input-width: 2em;

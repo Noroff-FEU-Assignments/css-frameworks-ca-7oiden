@@ -1,3 +1,18 @@
+.navbar {
+  position: relative;
+  background-color: $colorNavbar;
+  font-family: $fontPrimary;
+  padding: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: $colorNavbar;
+
+  @media (min-width: 992px) {
+    box-shadow: none;
+    position: static;
+  }
+}
+
 .nav-container {
   width: 85%;
   height: 70px;
@@ -12,27 +27,13 @@
   }
 }
 
-.navbar {
-  position: relative;
-  background-color: $colorNavbar;
-  font-family: $fontPrimary;
-  padding: 0;
-  width: 100%;
-  z-index: 100;
-
-  @media (min-width: 992px) {
-    box-shadow: none;
-    position: static;
-  }
-}
-
 #basic-navbar-nav {
   position: absolute;
   background-color: $colorNavbar;
   width: 100%;
   top: 70px;
   left: 0;
-  //box-shadow: 0 9px 29px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 12px rgba(0, 0, 0, 0.1);
   padding-bottom: 3rem;
 
   @media (min-width: 992px) {
@@ -83,21 +84,13 @@
   }
 }
 
-.navbar-button {
-  background-color: $colorPrimary;
-  color: $colorSecondary;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-
-  &:hover {
-    background-color: lighten($colorPrimary, 10%);
-  }
-
-  &:focus {
-    background-color: $colorPrimary;
-  }
+.brand {
+  font-family: $fontMainHeadings;
+  color: $colorPrimary !important;
+  font-style: italic;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-form {
@@ -119,16 +112,19 @@
   }
 }
 
-.brand {
-  font-family: $fontMainHeadings;
-  color: $colorPrimary !important;
-  font-style: italic;
-  font-weight: bold;
-  padding: 0;
-  margin: 0;
-}
+.navbar-button {
+  background-color: $colorPrimary;
+  color: $colorSecondary;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 
-// .navbar-toggler-icon {
-//   margin: 0;
-//   padding: 0;
-// }
+  &:hover {
+    background-color: lighten($colorPrimary, 10%);
+  }
+
+  &:focus {
+    background-color: $colorPrimary;
+  }
+}
