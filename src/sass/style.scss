@@ -66,6 +66,9 @@ $pagination-hover-bg: $colorPrimary;
 $pagination-hover-border-color: $colorPrimary;
 
 $form-label-margin-bottom: 0.25rem;
+$form-check-input-bg: $colorPrimary;
+$form-check-input-width: 2em;
+$form-check-input-checked-bg-color: grey;
 
 @import "~bootstrap/scss/bootstrap";
 

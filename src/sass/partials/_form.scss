@@ -1,3 +1,16 @@
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  @media (min-width: 992px) {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    gap: 50px;
+  }
+}
+
 .form-container {
   width: 100%;
   padding: 2rem 7.5%;
@@ -26,18 +39,6 @@
   border: none;
   margin-top: 1rem;
   padding: 0.5rem;
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: 992px) {
-    flex-direction: row;
-    width: 90%;
-    margin: 0 auto;
-    gap: 50px;
-  }
 }
 
 .form-wrapper {
@@ -85,4 +86,20 @@
   }
 }
 
+.form-check-input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
 
+.form-check-label {
+  margin-top: 1rem;
+  padding-left: 0.5rem;
+}
+
+.website::before {
+  content: "test";
+  width: 10px;
+  height: 10px;
+  background-color: black;
+}

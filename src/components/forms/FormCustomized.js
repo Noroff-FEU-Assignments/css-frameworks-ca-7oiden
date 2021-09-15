@@ -5,19 +5,19 @@ import Button from "react-bootstrap/Button";
 function FormCustomized() {
   return (
     <Form className="form">
-      <Form.Group className="form-group" controlId="formBasicEmail">
+      <Form.Group className="form-group" controlId="formBasicNam">
         <Form.Label>Name</Form.Label>
         <Form.Control type="text" />
       </Form.Group>
 
-      <Form.Group className="form-group" controlId="formBasicPassword">
+      <Form.Group className="form-group" controlId="formBasicEmail">
         <Form.Label>Email</Form.Label>
         <Form.Control type="email" />
       </Form.Group>
 
-      <Form.Group className="form-group" controlId="formBasicEmail">
+      <Form.Group className="form-group" controlId="formBasicWebsite">
         <Form.Label>Website</Form.Label>
-        <Form.Control type="text" />
+        <Form.Control className="website" type="text" />
       </Form.Group>
 
       <Form.Group
