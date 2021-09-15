@@ -13,6 +13,9 @@
 
 .accordion-button {
   font-size: 1.1875rem;
+
+  &:active {
+  }
 }
 
 .accordion:first-child {
@@ -27,6 +30,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-top: 1px solid $colorPrimary;
 }
-
-

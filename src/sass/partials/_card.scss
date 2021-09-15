@@ -3,6 +3,7 @@
   height: 400px;
   border-radius: 10px;
   margin-bottom: 2rem;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card-img-top {
@@ -12,7 +13,7 @@
 }
 
 .card-body {
-  padding: 1rem 2rem;
+  padding: 1rem 2rem auto 1rem;
 }
 
 .card-title {
@@ -27,7 +28,18 @@
   border-radius: 4px;
   text-transform: uppercase;
   margin-top: 25px;
+  margin-bottom: 1rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   border-right: 32px solid $colorLightText;
+
+  &:hover {
+    background-color: lighten($colorPrimary, 10%);
+    border-color: lighten($colorLightText, 10%);
+  }
+
+  &:focus {
+    background-color: $colorPrimary;
+    border-color: $colorLightText;
+  }
 }

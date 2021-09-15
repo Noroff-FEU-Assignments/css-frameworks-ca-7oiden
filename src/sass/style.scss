@@ -68,7 +68,7 @@ $pagination-hover-border-color: $colorPrimary;
 $form-label-margin-bottom: 0.25rem;
 $form-check-input-bg: $colorPrimary;
 $form-check-input-width: 2em;
-$form-check-input-checked-bg-color: grey;
+$form-check-input-checked-bg-color: $colorLightText;
 
 @import "~bootstrap/scss/bootstrap";
 
@@ -80,6 +80,7 @@ $form-check-input-checked-bg-color: grey;
 @import "./partials/accordion";
 @import "./partials/tabs";
 @import "./partials/content";
+@import "./partials/pagination";
 @import "./partials/card";
 @import "./partials/form";
 @import "./partials/footer";

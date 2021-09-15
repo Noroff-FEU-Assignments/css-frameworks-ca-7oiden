@@ -25,7 +25,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button" variant="primary">
+              <Button className="card-button">
                 More
               </Button>
             </Card.Body>
@@ -41,7 +41,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button" variant="primary">
+              <Button className="card-button">
                 More
               </Button>
             </Card.Body>
@@ -57,7 +57,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button" variant="primary">
+              <Button className="card-button">
                 More
               </Button>
             </Card.Body>
@@ -73,7 +73,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button" variant="primary">
+              <Button className="card-button">
                 More
               </Button>
             </Card.Body>
@@ -89,7 +89,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button" variant="primary">
+              <Button className="card-button">
                 More
               </Button>
             </Card.Body>
@@ -104,7 +104,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button" variant="primary">
+              <Button className="card-button">
                 More
               </Button>
             </Card.Body>
@@ -119,7 +119,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button" variant="primary">
+              <Button className="card-button">
                 More
               </Button>
             </Card.Body>
@@ -134,7 +134,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button" variant="primary">
+              <Button className="card-button">
                 More
               </Button>
             </Card.Body>

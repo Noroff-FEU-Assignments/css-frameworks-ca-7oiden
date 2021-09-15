@@ -14,10 +14,11 @@
   text-transform: uppercase;
   color: $colorDarkText;
   font-size: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 
   @media (min-width: 992px) {
-    padding-left: 0;
-    padding-right: 1rem;
+   
   }
 
   &:first-child {
@@ -31,9 +32,10 @@
 }
 
 .content-image {
-  height: 175px;
+  width: 100%;
 
   @media (min-width: 992px) {
+    width: auto;
     height: 150px;
   }
 }
