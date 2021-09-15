@@ -52,6 +52,21 @@ $nav-tabs-border-width: 0;
 $nav-link-color: $colorPrimary;
 $nav-link-hover-color: none;
 
+$pagination-bg: $colorSecondary;
+$pagination-color: $colorPrimary;
+$pagination-active-color: $colorSecondary;
+$pagination-active-bg: $colorPrimary;
+$pagination-padding-y: 0.5rem;
+$pagination-padding-x: 1rem;
+$pagination-border-color: $colorPrimary;
+$pagination-border-radius: 4px;
+$pagination-active-border-color: $colorPrimary;
+$pagination-hover-color: $colorSecondary;
+$pagination-hover-bg: $colorPrimary;
+$pagination-hover-border-color: $colorPrimary;
+
+$form-label-margin-bottom: 0.25rem;
+
 @import "~bootstrap/scss/bootstrap";
 
 @import "./partials/base";
@@ -63,4 +78,5 @@ $nav-link-hover-color: none;
 @import "./partials/tabs";
 @import "./partials/content";
 @import "./partials/card";
+@import "./partials/form";
 @import "./partials/footer";

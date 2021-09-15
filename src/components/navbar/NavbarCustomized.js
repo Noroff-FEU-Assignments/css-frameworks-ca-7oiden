@@ -27,7 +27,7 @@ function NavbarCustom() {
             <FormControl
               type="search"
               placeholder="Search"
-              className="mr-2"
+              className="navbar-form-input"
               aria-label="Search"
             />
             <Button className="navbar-button">Go</Button>

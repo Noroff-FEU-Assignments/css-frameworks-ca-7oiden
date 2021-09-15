@@ -13,7 +13,7 @@ function TabsCustomized() {
       <Tabs
         defaultActiveKey="first"
         id="uncontrolled-tab-example"
-        className="mb-3"
+        className="tabs"
       >
         <Tab eventKey="first" title="First">
           <div className="tab-body">
