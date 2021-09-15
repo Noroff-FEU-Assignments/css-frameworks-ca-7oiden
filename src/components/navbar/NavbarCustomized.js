@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Container from "react-bootstrap/Container";
 import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
 import { NavLink } from "react-router-dom";
@@ -10,7 +9,7 @@ import Button from "react-bootstrap/Button";
 function NavbarCustom() {
   return (
     <Navbar variant="light" expand="lg">
-      <Container fluid>
+      <div className="nav-container">
         <Navbar.Brand href="#home" className="brand">
           The YAY Company
         </Navbar.Brand>
@@ -33,7 +32,7 @@ function NavbarCustom() {
             <Button className="navbar-button">Go</Button>
           </Form>
         </Navbar.Collapse>
-      </Container>
+      </div>
     </Navbar>
   );
 }
