@@ -17,7 +17,12 @@ function FormCustomized() {
 
       <Form.Group className="form-group" controlId="formBasicWebsite">
         <Form.Label>Website</Form.Label>
-        <Form.Control className="website" type="text" />
+        <div className="d-flex">
+          <div className="form-control-prefix">
+            <span>https://</span>
+          </div>
+          <Form.Control id="form-control-website" type="text" />
+        </div>
       </Form.Group>
 
       <Form.Group
