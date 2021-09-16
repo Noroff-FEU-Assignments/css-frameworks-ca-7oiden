@@ -12,9 +12,8 @@ import News6 from "../../images/news/news-6.jpg";
 import News7 from "../../images/news/news-7.jpg";
 import News8 from "../../images/news/news-8.jpg";
 
-function CardCustomized() {
+function CardCustomizedGrid() {
   return (
-    <>
       <Row>
         <Col sm={6} md={6} lg={4} xl={3}>
           <Card>
@@ -25,9 +24,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">
-                More
-              </Button>
+              <Button className="card-button">More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -41,9 +38,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">
-                More
-              </Button>
+              <Button className="card-button">More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -57,9 +52,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">
-                More
-              </Button>
+              <Button className="card-button">More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -73,9 +66,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">
-                More
-              </Button>
+              <Button className="card-button">More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -89,9 +80,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">
-                More
-              </Button>
+              <Button className="card-button">More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -104,9 +93,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">
-                More
-              </Button>
+              <Button className="card-button">More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -119,9 +106,7 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">
-                More
-              </Button>
+              <Button className="card-button">More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -134,15 +119,12 @@ function CardCustomized() {
             <Card.Body>
               <Card.Title>Nunc porttitor vel</Card.Title>
               <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">
-                More
-              </Button>
+              <Button className="card-button">More</Button>
             </Card.Body>
           </Card>
         </Col>
       </Row>
-    </>
   );
 }
 
-export default CardCustomized;
+export default CardCustomizedGrid;

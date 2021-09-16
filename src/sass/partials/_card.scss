@@ -3,6 +3,7 @@
   height: 400px;
   border-radius: 10px;
   margin-bottom: 2rem;
+  border: none;
   box-shadow: $dropShadow;
 }
 
@@ -24,14 +25,24 @@
 .card-button {
   background-color: getColor(primary);
   width: 100%;
+  height: 45px;
   border: none;
   border-radius: 4px;
   text-transform: uppercase;
   margin-top: 25px;
   margin-bottom: 1rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  border-right: 32px solid getColor(lightText);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    height: 100%;
+    background: getColor(lightText);
+    border-radius: 0 4px 4px 0;
+  }
 
   &:hover {
     background-color: lighten(getColor(primary), 10%);

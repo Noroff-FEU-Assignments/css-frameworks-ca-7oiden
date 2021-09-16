@@ -1,6 +1,6 @@
 import React from "react";
 import MainHeading from "../../components/typography/MainHeading";
-import CardCustomized from "../../components/card/CardCustomized";
+import CardCustomizedGrid from "../../components/card/CardCustomizedGrid";
 import PaginationCustomized from "../../components/pagination/PaginationCustomized";
 
 function News() {
@@ -8,7 +8,7 @@ function News() {
     <div className="main-container">
       <MainHeading>News</MainHeading>
       <PaginationCustomized />
-      <CardCustomized />
+      <CardCustomizedGrid />
       <PaginationCustomized />
     </div>
   );
