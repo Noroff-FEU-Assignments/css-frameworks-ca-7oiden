@@ -3,16 +3,22 @@ import React from "react";
 function ContactInfo() {
   return (
     <>
-      <div>
-        <i className="fas fa-envelope"></i>
+      <div className="contact-info-items">
+        <div className="test">
+          <i className="fas fa-envelope"></i>
+        </div>
         <p>hello@yay.com</p>
       </div>
-      <div>
-        <i className="fas fa-phone"></i>
+      <div className="contact-info-items">
+        <div className="test">
+          <i className="fas fa-phone"></i>
+        </div>
         <p>123 456 7890</p>
       </div>
-      <div>
-        <i className="fas fa-map-marker-alt"></i>
+      <div className="contact-info-items">
+        <div className="test">
+          <i className="fas fa-map-marker-alt"></i>
+        </div>
         <div className="address-container">
           <p>123 Some Street</p>
           <p>Somewhere</p>

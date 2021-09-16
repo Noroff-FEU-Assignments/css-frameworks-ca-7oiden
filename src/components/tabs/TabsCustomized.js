@@ -18,7 +18,7 @@ function TabsCustomized() {
         <Tab eventKey="first" title="First">
           <div className="tab-body">
             <img src={TabImg1} alt="" className="content-image" />
-            <div className="tab-body__container">
+            <div className="tab-container">
               <ContentText />
               <ContentLinks />
             </div>
@@ -27,7 +27,7 @@ function TabsCustomized() {
         <Tab eventKey="second" title="Second">
           <div className="tab-body">
             <img src={TabImg2} alt="" className="content-image" />
-            <div className="tab-body__container">
+            <div className="tab-container">
               <ContentText />
               <ContentLinks />
             </div>
@@ -36,7 +36,7 @@ function TabsCustomized() {
         <Tab eventKey="third" title="Third">
           <div className="tab-body">
             <img src={TabImg3} alt="" className="content-image" />
-            <div className="tab-body__container">
+            <div className="tab-container">
               <ContentText />
               <ContentLinks />
             </div>

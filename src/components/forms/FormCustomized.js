@@ -21,7 +21,7 @@ function FormCustomized() {
           <div className="form-control-prefix">
             <span>https://</span>
           </div>
-          <Form.Control id="form-control-website" type="text" />
+          <Form.Control className="form-control-website" type="text" />
         </div>
       </Form.Group>
 
@@ -30,7 +30,7 @@ function FormCustomized() {
         controlId="exampleForm.ControlTextarea1"
       >
         <Form.Label>Message</Form.Label>
-        <Form.Control as="textarea" rows={6} />
+        <Form.Control as="textarea" rows={6} className="form-control-textarea" />
       </Form.Group>
 
       <Form.Group className="form-group" controlId="formBasicCheckbox">

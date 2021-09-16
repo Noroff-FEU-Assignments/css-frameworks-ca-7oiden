@@ -9,11 +9,11 @@ function Contact() {
       <div className="contact-info-container">
         <ContactInfo />
       </div>
-      <div className="form-wrapper">
-        <div className="contact-heading">
+      <div className="contact-form-wrapper">
+        <div className="contact-form-header">
           <MainHeading>Submit your details</MainHeading>
         </div>
-        <div className="form-container">
+        <div className="contact-form-container">
           <FormCustomized />
         </div>
       </div>
