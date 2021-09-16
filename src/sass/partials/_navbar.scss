@@ -10,6 +10,32 @@
     box-shadow: none;
     position: static;
   }
+
+  &-form {
+    width: getWidth(smallScreen);
+    margin: 0 auto;
+
+    @media (min-width: getBreakpoint(large)) {
+      margin: 0;
+      max-width: 250px;
+    }
+  }
+
+  &-button {
+    background-color: getColor(primary);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten(getColor(primary), 10%);
+    }
+
+    &:focus {
+      background-color: getColor(navbar);
+    }
+  }
 }
 
 .nav-container {
@@ -48,7 +74,7 @@
   }
 }
 
-.me-auto a {
+.navbar-links a {
   color: getColor(darkText);
   text-decoration: none;
   border-radius: 3px;
@@ -70,6 +96,14 @@
     background-color: getColor(secondary);
   }
 
+  //have excluded activ bg on small screens
+  &.active {
+    @media (min-width: getBreakpoint(large)) {
+      color: getColor(darkText);
+      background-color: getColor(secondary);
+    }
+  }
+
   &:first-of-type {
     margin-top: 1rem;
 
@@ -87,10 +121,6 @@
   }
 }
 
-.brand-link {
-  text-decoration: none;
-}
-
 .brand {
   font-family: $fontMainHeadings;
   color: getColor(primary) !important;
@@ -98,14 +128,9 @@
   font-weight: bold;
   padding: 0;
   margin: 0;
-}
 
-.navbar-form {
-  width: getWidth(smallScreen);
-  margin: 0 auto;
-
-  @media (min-width: getBreakpoint(large)) {
-    margin-left: 20%;
+  &-link {
+    text-decoration: none;
   }
 }
 
@@ -117,22 +142,5 @@
 
   &::placeholder {
     color: getColor(lightText);
-  }
-}
-
-.navbar-button {
-  background-color: getColor(primary);
-  //color: getColor(secondary);
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-
-  &:hover {
-    background-color: lighten(getColor(primary), 10%);
-  }
-
-  &:focus {
-    background-color: getColor(navbar);
   }
 }

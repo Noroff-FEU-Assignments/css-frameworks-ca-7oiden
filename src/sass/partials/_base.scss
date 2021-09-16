@@ -25,20 +25,6 @@ body {
   flex-direction: column;
 }
 
-.wrapper {
-  flex: 1 0 auto;
-  //position: relative;
-}
-
-main {
-  background: radial-gradient(
-    getColor(backgroundGrad1),
-    getColor(backgroundGrad2)
-  );
-  margin: 0;
-  padding-bottom: 250px;
-}
-
 img {
   height: auto;
   display: block;
