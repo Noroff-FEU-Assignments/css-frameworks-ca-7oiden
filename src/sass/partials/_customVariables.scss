@@ -20,7 +20,7 @@ $breakpoints: (
   small: 576px,
   medium: 768px,
   large: 992px,
-  extraLarge: 1200px,
+  Xlarge: 1200px,
 );
 
 @function getBreakpoint($breakpoint) {
@@ -31,8 +31,10 @@ $breakpoints: (
 $widths: (
   paddingSmallScreen: 7.5%,
   paddingLargeScreen: 5%,
+  paddingXlargeScreen: 10%,
   smallScreen: 85%,
   largeScreen: 90%,
+  XlargeScreen: 80%,
 );
 
 @function getWidth($width) {

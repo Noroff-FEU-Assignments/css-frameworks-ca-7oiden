@@ -13,7 +13,7 @@ body {
 body {
   margin: 0;
   //background: radial-gradient(red, green);
-  background: radial-gradient(#ffffff, #e5e5e5);
+  //background: radial-gradient(getColor(backgroundGrad1), getColor(backgroundGrad2));
   font-family: $fontPrimary;
   color: getColor(lightText);
   font-size: 1rem;
@@ -28,6 +28,15 @@ body {
 .wrapper {
   flex: 1 0 auto;
   //position: relative;
+}
+
+main {
+  background: radial-gradient(
+    getColor(backgroundGrad1),
+    getColor(backgroundGrad2)
+  );
+  margin: 0;
+  padding-bottom: 250px;
 }
 
 img {

@@ -9,6 +9,10 @@
     margin: 0 auto;
     gap: 50px;
   }
+
+  @media (min-width: getBreakpoint(Xlarge)) {
+    width: getWidth(XlargeScreen);
+  }
 }
 
 .form-container {
@@ -19,6 +23,10 @@
 
   @media (min-width: getBreakpoint(large)) {
     padding: 2rem getWidth(paddingLargeScreen);
+  }
+
+  @media (min-width: getBreakpoint(Xlarge)) {
+    padding: 2rem getWidth(paddingXLargeScreen);
   }
 }
 

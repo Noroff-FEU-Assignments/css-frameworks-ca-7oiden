@@ -1,8 +1,12 @@
 .main-container {
   width: getWidth(smallScreen);
-  margin: 50px auto 200px auto;
+  margin: 0 auto;
 
   @media (min-width: getBreakpoint(large)) {
     width: getWidth(largeScreen);
+  }
+
+  @media (min-width: getBreakpoint(Xlarge)) {
+    width: getWidth(XlargeScreen);
   }
 }

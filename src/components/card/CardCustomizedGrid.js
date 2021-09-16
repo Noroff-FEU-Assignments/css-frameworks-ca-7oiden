@@ -14,116 +14,116 @@ import News8 from "../../images/news/news-8.jpg";
 
 function CardCustomizedGrid() {
   return (
-      <Row>
-        <Col sm={6} md={6} lg={4} xl={3}>
-          <Card>
-            <div
-              className="card-img-top"
-              style={{ backgroundImage: `url(${News1})` }}
-            ></div>
-            <Card.Body>
-              <Card.Title>Nunc porttitor vel</Card.Title>
-              <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
+    <Row>
+      <Col sm={6} md={6} lg={4} xl={3}>
+        <Card>
+          <div
+            className="card-img-top"
+            style={{ backgroundImage: `url(${News1})` }}
+          ></div>
+          <Card.Body>
+            <Card.Title as="h2">Nunc porttitor vel</Card.Title>
+            <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
+            <Button className="card-button">More</Button>
+          </Card.Body>
+        </Card>
+      </Col>
 
-        <Col sm={6} md={6} lg={4} xl={3}>
-          <Card>
-            <div
-              className="card-img-top"
-              style={{ backgroundImage: `url(${News2})` }}
-            ></div>
-            <Card.Body>
-              <Card.Title>Nunc porttitor vel</Card.Title>
-              <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
+      <Col sm={6} md={6} lg={4} xl={3}>
+        <Card>
+          <div
+            className="card-img-top"
+            style={{ backgroundImage: `url(${News2})` }}
+          ></div>
+          <Card.Body>
+            <Card.Title as="h2">Nunc porttitor vel</Card.Title>
+            <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
+            <Button className="card-button">More</Button>
+          </Card.Body>
+        </Card>
+      </Col>
 
-        <Col sm={6} md={6} lg={4} xl={3}>
-          <Card>
-            <div
-              className="card-img-top"
-              style={{ backgroundImage: `url(${News3})` }}
-            ></div>
-            <Card.Body>
-              <Card.Title>Nunc porttitor vel</Card.Title>
-              <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
+      <Col sm={6} md={6} lg={4} xl={3}>
+        <Card>
+          <div
+            className="card-img-top"
+            style={{ backgroundImage: `url(${News3})` }}
+          ></div>
+          <Card.Body>
+            <Card.Title as="h2">Nunc porttitor vel</Card.Title>
+            <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
+            <Button className="card-button">More</Button>
+          </Card.Body>
+        </Card>
+      </Col>
 
-        <Col sm={6} md={6} lg={4} xl={3}>
-          <Card>
-            <div
-              className="card-img-top"
-              style={{ backgroundImage: `url(${News4})` }}
-            ></div>
-            <Card.Body>
-              <Card.Title>Nunc porttitor vel</Card.Title>
-              <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
+      <Col sm={6} md={6} lg={4} xl={3}>
+        <Card>
+          <div
+            className="card-img-top"
+            style={{ backgroundImage: `url(${News4})` }}
+          ></div>
+          <Card.Body>
+            <Card.Title as="h2">Nunc porttitor vel</Card.Title>
+            <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
+            <Button className="card-button">More</Button>
+          </Card.Body>
+        </Card>
+      </Col>
 
-        <Col sm={6} md={6} lg={4} xl={3}>
-          <Card>
-            <div
-              className="card-img-top"
-              style={{ backgroundImage: `url(${News5})` }}
-            ></div>
-            <Card.Body>
-              <Card.Title>Nunc porttitor vel</Card.Title>
-              <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm={6} md={6} lg={4} xl={3}>
-          <Card>
-            <div
-              className="card-img-top"
-              style={{ backgroundImage: `url(${News6})` }}
-            ></div>
-            <Card.Body>
-              <Card.Title>Nunc porttitor vel</Card.Title>
-              <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm={6} md={6} lg={4} xl={3}>
-          <Card>
-            <div
-              className="card-img-top"
-              style={{ backgroundImage: `url(${News7})` }}
-            ></div>
-            <Card.Body>
-              <Card.Title>Nunc porttitor vel</Card.Title>
-              <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col sm={6} md={6} lg={4} xl={3}>
-          <Card>
-            <div
-              className="card-img-top"
-              style={{ backgroundImage: `url(${News8})` }}
-            ></div>
-            <Card.Body>
-              <Card.Title>Nunc porttitor vel</Card.Title>
-              <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
-              <Button className="card-button">More</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+      <Col sm={6} md={6} lg={4} xl={3}>
+        <Card>
+          <div
+            className="card-img-top"
+            style={{ backgroundImage: `url(${News5})` }}
+          ></div>
+          <Card.Body>
+            <Card.Title as="h2">Nunc porttitor vel</Card.Title>
+            <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
+            <Button className="card-button">More</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col sm={6} md={6} lg={4} xl={3}>
+        <Card>
+          <div
+            className="card-img-top"
+            style={{ backgroundImage: `url(${News6})` }}
+          ></div>
+          <Card.Body>
+            <Card.Title as="h2">Nunc porttitor vel</Card.Title>
+            <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
+            <Button className="card-button">More</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col sm={6} md={6} lg={4} xl={3}>
+        <Card>
+          <div
+            className="card-img-top"
+            style={{ backgroundImage: `url(${News7})` }}
+          ></div>
+          <Card.Body>
+            <Card.Title as="h2">Nunc porttitor vel</Card.Title>
+            <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
+            <Button className="card-button">More</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+      <Col sm={6} md={6} lg={4} xl={3}>
+        <Card>
+          <div
+            className="card-img-top"
+            style={{ backgroundImage: `url(${News8})` }}
+          ></div>
+          <Card.Body>
+            <Card.Title as="h2">Nunc porttitor vel</Card.Title>
+            <Card.Text>Nunc malesuada eget est fringilla dapibus.</Card.Text>
+            <Button className="card-button">More</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+    </Row>
   );
 }
 

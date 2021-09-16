@@ -1,5 +1,6 @@
 footer {
   background-color: getColor(secondary);
+  margin: 0;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -20,6 +21,10 @@ footer {
     align-items: center;
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
+  }
+
+  @media (min-width: getBreakpoint(Xlarge)) {
+    width: getWidth(XlargeScreen);
   }
 
   & div i {
