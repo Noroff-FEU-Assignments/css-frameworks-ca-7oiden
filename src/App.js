@@ -1,6 +1,6 @@
 import "./sass/style.scss";
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
 import News from "./pages/news/News";

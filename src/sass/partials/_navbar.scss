@@ -13,7 +13,7 @@
 }
 
 .nav-container {
-  width: getWidth(smallScreen);;
+  width: getWidth(smallScreen);
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@
   padding: 0;
 
   @media (min-width: getBreakpoint(large)) {
-    width: getWidth(lmallScreen);;
+    width: getWidth(lmallScreen);
   }
 }
 
@@ -49,7 +49,7 @@
   text-decoration: none;
   border-radius: 3px;
   margin: 0 0 0.75rem 0;
-  padding: 0.75rem 0 0.75rem getWidth(paddingSmallScreen);;
+  padding: 0.75rem 0 0.75rem getWidth(paddingSmallScreen);
 
   @media (min-width: 992px) {
     margin: 0 0 0 2rem;
@@ -83,6 +83,10 @@
   }
 }
 
+.brand-link {
+  text-decoration: none;
+}
+
 .brand {
   font-family: $fontMainHeadings;
   color: getColor(primary) !important;
@@ -93,7 +97,7 @@
 }
 
 .navbar-form {
-  width: getWidth(smallScreen);;
+  width: getWidth(smallScreen);
   margin: 0 auto;
 
   @media (min-width: getBreakpoint(large)) {
@@ -113,7 +117,7 @@
 
 .navbar-button {
   background-color: getColor(primary);
-  color: getColor(secondary);
+  //color: getColor(secondary);
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0 4px 4px 0;

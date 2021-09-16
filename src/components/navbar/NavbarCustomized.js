@@ -3,16 +3,16 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import FormControl from "react-bootstrap/FormControl";
 import Form from "react-bootstrap/Form";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 
 function NavbarCustom() {
   return (
     <Navbar expand="lg">
       <div className="nav-container">
-        <Navbar.Brand href="#home" className="brand">
-          The YAY Company
-        </Navbar.Brand>
+        <Link exact to="/" className="brand-link">
+          <Navbar.Brand className="brand">The YAY Company</Navbar.Brand>
+        </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

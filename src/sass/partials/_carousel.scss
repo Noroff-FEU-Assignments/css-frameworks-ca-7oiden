@@ -7,10 +7,17 @@
   }
 }
 
-.carousel-indicators > * {
-  background-color: white !important;
-}
+.carousel-indicators {
+  margin-bottom: 2rem;
 
-.carousel-indicators > * {
-  border-radius: 10px !important;
+  & button[type="button"] {
+    background: white !important;
+    border-radius: 2px;
+    opacity: 1;
+    border: none;
+  }
+
+  & .active[type="button"] {
+    background: getColor(primary) !important;
+  }
 }
