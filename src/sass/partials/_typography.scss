@@ -1,15 +1,15 @@
 h1 {
   font-family: $fontMainHeadings;
   font-size: 2.125rem;
-  color: $colorPrimary;
+  color: getColor(primary);
   padding-bottom: 1rem;
 }
 
 .contact-heading {
   margin-top: 50px;
-  padding-left: 7.5%;
+  padding-left: getWidth(paddingSmallScreen);
 
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     padding-left: 0;
   }
 }

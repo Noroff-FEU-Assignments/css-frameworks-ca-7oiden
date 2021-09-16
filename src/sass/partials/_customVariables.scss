@@ -1,0 +1,49 @@
+//custom variables
+$colors: (
+  primary: #e92569,
+  secondary: #ffffff,
+  navbar: #efefef,
+  contrastText: #0a0a0a,
+  lightText: #767676,
+  darkText: #0a0a0a,
+  backgroundGrad1: #ffffff,
+  backgroundGrad2: #e5e5e5,
+  border: #d1d1d1,
+  footer: black,
+);
+
+@function getColor($color) {
+  @return map-get($colors, $color);
+}
+
+
+//breakpoints
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  extraLarge: 1200px,
+);
+
+@function getBreakpoint($breakpoint) {
+  @return map-get($breakpoints, $breakpoint);
+}
+
+//sets container widths
+$widths: (
+  paddingSmallScreen: 7.5%,
+  paddingLargeScreen: 5%,
+  smallScreen: 85%,
+  largeScreen: 90%,
+);
+
+@function getWidth($width) {
+  @return map-get($widths, $width);
+}
+
+//box-shadow
+$dropShadow: "0 6px 12px rgba(0, 0, 0, 0.2)";
+
+//fonts
+$fontPrimary: "Lato";
+$fontMainHeadings: "Playfair Display";

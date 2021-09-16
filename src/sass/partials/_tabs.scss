@@ -41,7 +41,7 @@
 
 .tab-content {
   background-color: white;
-  border: 1px solid $colorBorder;
+  border: 1px solid getColor(border);
   border-radius: 0 10px 10px 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: $dropShadow;
 }

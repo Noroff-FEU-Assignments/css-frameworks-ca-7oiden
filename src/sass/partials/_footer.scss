@@ -1,14 +1,20 @@
+footer {
+  background-color: getColor(secondary);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .footer-container {
-  width: 85%;
+  width: getWidth(smallScreen);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  color: $colorLightText;
+  color: getColor(lightText);
   padding-top: 2rem;
   padding-bottom: 1rem;
 
-  @media (min-width: 992px) {
-    width: 90%;
+  @media (min-width: getBreakpoint(large)) {
+    width: getWidth(largeScreen);
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +32,7 @@
   text-align: center;
   margin-bottom: 1rem;
 
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     text-align: left;
     flex: 1;
     margin-bottom: 0;
@@ -40,7 +46,7 @@
 }
 
 .hello {
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     transform: translate(-50%);
   }
 }

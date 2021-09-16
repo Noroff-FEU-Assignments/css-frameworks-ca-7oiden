@@ -1,5 +1,5 @@
 .accordion-container {
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     display: none;
   }
 }
@@ -7,7 +7,7 @@
 .accordion {
   border: none;
   border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: $dropShadow;
   margin-bottom: 100px;
 }
 
@@ -33,5 +33,5 @@
   gap: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  border-top: 1px solid $colorPrimary;
+  border-top: 1px solid getColor(primary);
 }

@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
 
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     justify-content: flex-start;
     padding-top: 1rem;
   }
@@ -12,13 +12,12 @@
 
 .content-links div {
   text-transform: uppercase;
-  color: $colorDarkText;
+  color: getColor(darkText);
   font-size: 2rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 
-  @media (min-width: 992px) {
-   
+  @media (min-width: getBreakpoint(large)) {
   }
 
   &:first-child {
@@ -34,7 +33,7 @@
 .content-image {
   width: 100%;
 
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     width: auto;
     height: 150px;
   }

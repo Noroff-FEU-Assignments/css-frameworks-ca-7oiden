@@ -1,20 +1,19 @@
 .navbar {
   position: relative;
-  background-color: $colorNavbar;
+  background-color: getColor(navbar);
   font-family: $fontPrimary;
   padding: 0;
   width: 100%;
   z-index: 100;
-  background-color: $colorNavbar;
 
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     box-shadow: none;
     position: static;
   }
 }
 
 .nav-container {
-  width: 85%;
+  width: getWidth(smallScreen);;
   height: 70px;
   display: flex;
   justify-content: space-between;
@@ -22,21 +21,21 @@
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: 992px) {
-    width: 90%;
+  @media (min-width: getBreakpoint(large)) {
+    width: getWidth(lmallScreen);;
   }
 }
 
 #basic-navbar-nav {
   position: absolute;
-  background-color: $colorNavbar;
+  background-color: getColor(navbar);
   width: 100%;
   top: 70px;
   left: 0;
   box-shadow: 0 16px 12px rgba(0, 0, 0, 0.1);
   padding-bottom: 3rem;
 
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     position: static;
     width: auto;
     box-shadow: none;
@@ -46,11 +45,11 @@
 }
 
 .me-auto a {
-  color: $colorDarkText;
+  color: getColor(darkText);
   text-decoration: none;
   border-radius: 3px;
   margin: 0 0 0.75rem 0;
-  padding: 0.75rem 0 0.75rem 7.5%;
+  padding: 0.75rem 0 0.75rem getWidth(paddingSmallScreen);;
 
   @media (min-width: 992px) {
     margin: 0 0 0 2rem;
@@ -58,19 +57,19 @@
   }
 
   &:hover {
-    color: $colorDarkText;
-    background-color: $colorSecondary;
+    color: getColor(darkText);
+    background-color: getColor(secondary);
   }
 
   &:active {
-    color: $colorDarkText;
-    background-color: $colorSecondary;
+    color: getColor(darkText);
+    background-color: getColor(secondary);
   }
 
   &:first-of-type {
     margin-top: 1rem;
 
-    @media (min-width: 992px) {
+    @media (min-width: getBreakpoint(large)) {
       margin-top: 0;
     }
   }
@@ -78,7 +77,7 @@
   &:last-of-type {
     margin-bottom: 3rem;
 
-    @media (min-width: 992px) {
+    @media (min-width: getBreakpoint(large)) {
       margin-bottom: 0;
     }
   }
@@ -86,7 +85,7 @@
 
 .brand {
   font-family: $fontMainHeadings;
-  color: $colorPrimary !important;
+  color: getColor(primary) !important;
   font-style: italic;
   font-weight: bold;
   padding: 0;
@@ -94,37 +93,37 @@
 }
 
 .navbar-form {
-  width: 85%;
+  width: getWidth(smallScreen);;
   margin: 0 auto;
 
-  @media (min-width: 992px) {
+  @media (min-width: getBreakpoint(large)) {
     margin-left: 20%;
   }
 }
 
 .navbar-form-input {
-  background-color: colorSecondary;
+  background-color: getColor(secondary);
   border: none;
   border-radius: 4px 0 0 4px;
 
   &::placeholder {
-    color: $colorLightText;
+    color: getColor(lightText);
   }
 }
 
 .navbar-button {
-  background-color: $colorPrimary;
-  color: $colorSecondary;
+  background-color: getColor(primary);
+  color: getColor(secondary);
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0 4px 4px 0;
   cursor: pointer;
 
   &:hover {
-    background-color: lighten($colorPrimary, 10%);
+    background-color: lighten(getColor(primary), 10%);
   }
 
   &:focus {
-    background-color: $colorPrimary;
+    background-color: getColor(navbar);
   }
 }
