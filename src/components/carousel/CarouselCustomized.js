@@ -1,29 +1,20 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import CarouselImg1 from "../../images/carousel/carousel-1.jpg";
-import CarouselImg2 from "../../images/carousel/carousel-2.jpg";
-import CarouselImg3 from "../../images/carousel/carousel-3.jpg";
+import { CarouselImage1 } from "../images/CarouselImages";
+import { CarouselImage2 } from "../images/CarouselImages";
+import { CarouselImage3 } from "../images/CarouselImages";
 
 function StyledCarousel() {
   return (
     <Carousel controls={false} interval={null}>
       <Carousel.Item>
-        <div
-          className="carousel-image"
-          style={{ backgroundImage: `url(${CarouselImg1})` }}
-        ></div>
+        <CarouselImage1 />
       </Carousel.Item>
       <Carousel.Item>
-        <div
-          className="carousel-image"
-          style={{ backgroundImage: `url(${CarouselImg2})` }}
-        ></div>
+        <CarouselImage2 />
       </Carousel.Item>
       <Carousel.Item>
-        <div
-          className="carousel-image"
-          style={{ backgroundImage: `url(${CarouselImg3})` }}
-        ></div>
+        <CarouselImage3 />
       </Carousel.Item>
     </Carousel>
   );

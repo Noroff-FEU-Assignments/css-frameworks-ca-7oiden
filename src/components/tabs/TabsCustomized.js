@@ -1,11 +1,11 @@
 import React from "react";
 import Tabs from "react-bootstrap/Tabs";
 import Tab from "react-bootstrap/Tab";
-import TabImg1 from "../../images/tab/tab-1.jpg";
-import TabImg2 from "../../images/tab/tab-2.jpg";
-import TabImg3 from "../../images/tab/tab-3.jpg";
-import ContentLinks from "../acc-tab-content/ContentLinks";
-import ContentText from "../acc-tab-content/ContentText";
+import ContentLinks from "../typography/ContentLinks";
+import ContentText from "../typography/ContentText";
+import { ContentImage1 } from "../images/ContentImages";
+import { ContentImage2 } from "../images/ContentImages";
+import { ContentImage3 } from "../images/ContentImages";
 
 function TabsCustomized() {
   return (
@@ -17,7 +17,7 @@ function TabsCustomized() {
       >
         <Tab eventKey="first" title="First">
           <div className="tab-body">
-            <img src={TabImg1} alt="" className="content-image" />
+            <ContentImage1 />
             <div className="tab-container">
               <ContentText />
               <ContentLinks />
@@ -26,7 +26,7 @@ function TabsCustomized() {
         </Tab>
         <Tab eventKey="second" title="Second">
           <div className="tab-body">
-            <img src={TabImg2} alt="" className="content-image" />
+            <ContentImage2 />
             <div className="tab-container">
               <ContentText />
               <ContentLinks />
@@ -35,7 +35,7 @@ function TabsCustomized() {
         </Tab>
         <Tab eventKey="third" title="Third">
           <div className="tab-body">
-            <img src={TabImg3} alt="" className="content-image" />
+            <ContentImage3 />
             <div className="tab-container">
               <ContentText />
               <ContentLinks />

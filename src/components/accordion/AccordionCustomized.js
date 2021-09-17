@@ -1,10 +1,10 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
-import TabImg1 from "../../images/tab/tab-1.jpg";
-import TabImg2 from "../../images/tab/tab-2.jpg";
-import TabImg3 from "../../images/tab/tab-3.jpg";
-import ContentLinks from "../acc-tab-content/ContentLinks";
-import ContentText from "../acc-tab-content/ContentText";
+import { ContentImage1 } from "../images/ContentImages";
+import { ContentImage2 } from "../images/ContentImages";
+import { ContentImage3 } from "../images/ContentImages";
+import ContentLinks from "../typography/ContentLinks";
+import ContentText from "../typography/ContentText";
 
 function AccordionCustomized() {
   return (
@@ -13,8 +13,8 @@ function AccordionCustomized() {
         <Accordion.Item eventKey="0">
           <Accordion.Header>First</Accordion.Header>
           <Accordion.Body>
-            <ContentText />
-            <img src={TabImg1} alt="" className="content-image" />
+            <ContentText></ContentText>
+            <ContentImage1 />
             <ContentLinks />
           </Accordion.Body>
         </Accordion.Item>
@@ -22,7 +22,7 @@ function AccordionCustomized() {
           <Accordion.Header>Second</Accordion.Header>
           <Accordion.Body>
             <ContentText />
-            <img src={TabImg2} alt="" className="content-image" />
+            <ContentImage2 />
             <ContentLinks />
           </Accordion.Body>
         </Accordion.Item>
@@ -30,7 +30,7 @@ function AccordionCustomized() {
           <Accordion.Header>Third</Accordion.Header>
           <Accordion.Body>
             <ContentText />
-            <img src={TabImg3} alt="" className="content-image" />
+            <ContentImage3 />
             <ContentLinks />
           </Accordion.Body>
         </Accordion.Item>

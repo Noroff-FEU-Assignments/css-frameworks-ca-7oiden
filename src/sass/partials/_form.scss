@@ -44,7 +44,7 @@
   padding: 2rem getWidth(paddingSmallScreen);
   background-color: getColor(navbar);
 
-  @include dropShadow(6px, 6px, 0.04);
+  @include dropShadow(6px, 6px, 0.1);
 
   @media (min-width: getBreakpoint(large)) {
     padding: 2rem getWidth(paddingLargeScreen);
