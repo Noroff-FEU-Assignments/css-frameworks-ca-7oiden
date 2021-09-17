@@ -1,4 +1,4 @@
-@import "./partials/customVariables";
+@import "./partials/custom";
 
 //bootstrap variables overrides
 
@@ -46,7 +46,7 @@ $pagination-bg: getColor(secondary);
 $pagination-color: getColor(primary);
 $pagination-active-color: getColor(secondary);
 $pagination-active-bg: getColor(primary);
-$pagination-padding-y: 0.5rem;
+$pagination-padding-y: 0.75rem;
 $pagination-padding-x: 1rem;
 $pagination-border-color: getColor(primary);
 $pagination-border-radius: 4px;

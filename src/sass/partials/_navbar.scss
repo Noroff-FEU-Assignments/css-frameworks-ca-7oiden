@@ -62,8 +62,9 @@
   width: 100%;
   top: 70px;
   left: 0;
-  box-shadow: 0 16px 12px rgba(0, 0, 0, 0.1);
   padding-bottom: 3rem;
+
+  @include dropShadow(16px, 22px, 0.06);
 
   @media (min-width: getBreakpoint(large)) {
     position: static;

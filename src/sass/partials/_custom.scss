@@ -7,6 +7,8 @@ $colors: (
   darkText: #0a0a0a,
   backgroundGrad1: #ffffff,
   backgroundGrad2: #e5e5e5,
+  accordionGrad1: #ffffff,
+  accordionGrad2: #f5f5f5,
   border: #d1d1d1,
   inputPrefix: #c7c7c7,
 );
@@ -42,13 +44,13 @@ $widths: (
 }
 
 //box-shadow
-$dropShadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+$dropShadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 
 //fonts
 $fontPrimary: "Lato";
 $fontMainHeadings: "Playfair Display";
 
-@mixin border($radius) {
-  border-radius: $radius;
-  border: 2px solid red;
+//mixins
+@mixin dropShadow($offsetY, $blur, $opacity) {
+  box-shadow: 0 $offsetY $blur rgba(0, 0, 0, $opacity);
 }
