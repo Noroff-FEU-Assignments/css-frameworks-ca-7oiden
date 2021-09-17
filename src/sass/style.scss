@@ -3,7 +3,7 @@
 //bootstrap variables overrides
 
 //brand
-$navbar-brand-font-size: 1.25rem;
+$navbar-brand-font-size: getFontSizes(medium);
 
 //navbar
 $navbar-light-color: getColor(lightText);

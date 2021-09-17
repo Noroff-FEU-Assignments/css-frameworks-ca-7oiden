@@ -50,6 +50,21 @@ $widths: (
 $fontPrimary: "Lato";
 $fontMainHeadings: "Playfair Display";
 
+// I have ignored the 15px and 17px fonts from XD, as it makes no sense to me to differnciate them from 16px;
+$fontSizes: (
+  standard: 1rem,
+  headings: 2.125rem,
+  medium: 1.25rem,
+  cardText: 1.125rem,
+  submitButton: 1.375rem,
+  icons: 2rem,
+  tabHeadings: 1.1875rem,
+);
+
+@function getFontSizes($fontSize) {
+  @return map-get($fontSizes, $fontSize);
+}
+
 //mixins
 @mixin dropShadow($offsetY, $blur, $opacity) {
   box-shadow: 0 $offsetY $blur rgba(0, 0, 0, $opacity);

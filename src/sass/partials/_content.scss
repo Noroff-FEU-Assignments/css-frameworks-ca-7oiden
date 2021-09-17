@@ -28,7 +28,7 @@
   &-links div {
     text-transform: uppercase;
     color: getColor(darkText);
-    font-size: 2rem;
+    font-size: getFontSizes(icons);
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 
@@ -40,4 +40,3 @@
     }
   }
 }
-

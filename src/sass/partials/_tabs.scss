@@ -43,6 +43,7 @@
 
 .nav-link {
   padding: 0.5rem 2rem 0.75rem 2rem;
+  font-size: getFontSizes(tabHeadings);
 
   &.active {
     border-radius: 10px 10px 0 0;
@@ -50,7 +51,4 @@
     border-left: 1px solid getColor(border) !important;
     border-right: 1px solid getColor(border) !important;
   }
-}
-
-.nav-link.active {
 }
