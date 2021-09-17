@@ -20,7 +20,11 @@ main {
     width: getWidth(largeScreen);
   }
 
-  @media (min-width: getBreakpoint(Xlarge)) {
-    width: getWidth(XlargeScreen);
+  @media (min-width: getBreakpoint(xlarge)) {
+    width: getWidth(xlargeScreen);
+  }
+
+  @media (min-width: getBreakpoint(xxlarge)) {
+    width: getWidth(xxlargeScreen);
   }
 }

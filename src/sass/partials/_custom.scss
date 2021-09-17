@@ -1,4 +1,5 @@
 //custom variables
+//color
 $colors: (
   primary: #e92569,
   secondary: #ffffff,
@@ -17,12 +18,13 @@ $colors: (
   @return map-get($colors, $color);
 }
 
-//breakpoints
+//breakpoints (more breakpoints added to avoid stretching on large screens)
 $breakpoints: (
   small: 576px,
   medium: 768px,
   large: 992px,
-  Xlarge: 1200px,
+  xlarge: 1200px,
+  xxlarge: 1400px,
 );
 
 @function getBreakpoint($breakpoint) {
@@ -36,15 +38,13 @@ $widths: (
   paddingXlargeScreen: 10%,
   smallScreen: 85%,
   largeScreen: 90%,
-  XlargeScreen: 80%,
+  xlargeScreen: 80%,
+  xxlargeScreen: 70%,
 );
 
 @function getWidth($width) {
   @return map-get($widths, $width);
 }
-
-//box-shadow
-$dropShadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 
 //fonts
 $fontPrimary: "Lato";

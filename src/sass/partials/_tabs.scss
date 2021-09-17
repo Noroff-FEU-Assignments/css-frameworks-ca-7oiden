@@ -38,13 +38,19 @@
 }
 
 .nav-item {
-  border-radius: 10px;
-  // border-top: 1px solid $colorBorder;
-  // border-left: 1px solid $colorBorder;
-  // border-right: 1px solid $colorBorder;
-  border-bottom: none;
+  border-radius: 10px 10px 0 0;
 }
 
 .nav-link {
   padding: 0.5rem 2rem 0.75rem 2rem;
+
+  &.active {
+    border-radius: 10px 10px 0 0;
+    border-top: 1px solid getColor(border) !important;
+    border-left: 1px solid getColor(border) !important;
+    border-right: 1px solid getColor(border) !important;
+  }
+}
+
+.nav-link.active {
 }

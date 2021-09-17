@@ -51,8 +51,12 @@
     width: getWidth(largeScreen);
   }
 
-  @media (min-width: getBreakpoint(Xlarge)) {
-    width: getWidth(XlargeScreen);
+  @media (min-width: getBreakpoint(xlarge)) {
+    width: getWidth(xlargeScreen);
+  }
+
+  @media (min-width: getBreakpoint(xxlarge)) {
+    width: getWidth(xxlargeScreen);
   }
 }
 
@@ -97,7 +101,7 @@
     background-color: getColor(secondary);
   }
 
-  //have excluded activ bg on small screens
+  //have excluded active bg on small screens
   &.active {
     @media (min-width: getBreakpoint(large)) {
       color: getColor(darkText);

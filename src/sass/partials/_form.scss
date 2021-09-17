@@ -11,8 +11,12 @@
     gap: 50px;
   }
 
-  @media (min-width: getBreakpoint(Xlarge)) {
-    width: getWidth(XlargeScreen);
+  @media (min-width: getBreakpoint(xlarge)) {
+    width: getWidth(xlargeScreen);
+  }
+
+  @media (min-width: getBreakpoint(xxlarge)) {
+    width: getWidth(xxlargeScreen);
   }
 }
 
@@ -46,8 +50,8 @@
     padding: 2rem getWidth(paddingLargeScreen);
   }
 
-  @media (min-width: getBreakpoint(Xlarge)) {
-    padding: 2rem getWidth(paddingXLargeScreen);
+  @media (min-width: getBreakpoint(xlarge)) {
+    padding: 2rem getWidth(paddingxLargeScreen);
   }
 }
 
