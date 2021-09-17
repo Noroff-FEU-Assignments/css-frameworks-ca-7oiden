@@ -1,9 +1,9 @@
 import "./sass/style.scss";
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/home/Home";
-import Contact from "./pages/contact/Contact";
-import News from "./pages/news/News";
+import Home from "./components/pages/Home";
+import Contact from "./components/pages/Contact";
+import News from "./components/pages/News";
 import Footer from "./components/footer/Footer";
 import NavbarCustomized from "./components/navbar/NavbarCustomized";
 

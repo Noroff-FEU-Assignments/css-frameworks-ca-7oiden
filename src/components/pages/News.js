@@ -1,7 +1,7 @@
 import React from "react";
-import MainHeading from "../../components/typography/MainHeading";
-import CardCustomizedGrid from "../../components/card/CardCustomizedGrid";
-import PaginationCustomized from "../../components/pagination/PaginationCustomized";
+import MainHeading from "../typography/MainHeading";
+import CardCustomizedGrid from "../card/CardCustomizedGrid";
+import PaginationCustomized from "../pagination/PaginationCustomized";
 
 function News() {
   return (

@@ -1,9 +1,9 @@
 import React from "react";
-import AccordionCustomized from "../../components/accordion/AccordionCustomized";
-import CarouselCustomized from "../../components/carousel/CarouselCustomized";
-import TabsCustomized from "../../components/tabs/TabsCustomized";
-import MainHeading from "../../components/typography/MainHeading";
-import MainText from "../../components/typography/MainText";
+import AccordionCustomized from "../accordion/AccordionCustomized";
+import CarouselCustomized from "../carousel/CarouselCustomized";
+import TabsCustomized from "../tabs/TabsCustomized";
+import MainHeading from "../typography/MainHeading";
+import MainText from "../typography/MainText";
 
 function Home() {
   return (

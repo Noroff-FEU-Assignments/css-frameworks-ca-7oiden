@@ -15,6 +15,8 @@
     border-radius: 2px;
     opacity: 1;
     border: none;
+
+    @include dropShadow(3px, 6px, 1);
   }
 
   & .active[type="button"] {

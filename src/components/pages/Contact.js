@@ -1,7 +1,7 @@
 import React from "react";
-import FormCustomized from "../../components/forms/FormCustomized";
-import ContactInfo from "../../components/typography/ContactInfo";
-import MainHeading from "../../components/typography/MainHeading";
+import FormCustomized from "../forms/FormCustomized";
+import ContactInfo from "../typography/ContactInfo";
+import MainHeading from "../typography/MainHeading";
 
 function Contact() {
   return (
@@ -22,3 +22,5 @@ function Contact() {
 }
 
 export default Contact;
+
+
