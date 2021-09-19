@@ -11,9 +11,16 @@
     position: static;
   }
 
+  &-collapse {
+    //animation removed since the drop-shadow seems to have caused a slight issue
+    transition: none;
+  }
+
   &-form {
     width: getWidth(smallScreen);
-    margin: 0 auto;
+    margin-left: getWidth(paddingSmallScreen);
+    //max-width set to avoid too wide input-bar
+    max-width: 400px;
 
     @media (min-width: getBreakpoint(large)) {
       margin: 0;
