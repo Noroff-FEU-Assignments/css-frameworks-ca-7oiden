@@ -1,4 +1,12 @@
 //custom variables
+
+//fonts
+$fontPrimary: "Lato";
+$fontMainHeadings: "Playfair Display";
+
+
+//functions
+
 //color
 $colors: (
   primary: #e92569,
@@ -46,10 +54,6 @@ $widths: (
 @function getWidth($width) {
   @return map-get($widths, $width);
 }
-
-//fonts
-$fontPrimary: "Lato";
-$fontMainHeadings: "Playfair Display";
 
 // I have ignored the 15px and 17px fonts from XD, as it makes no sense to me to differnciate them from 16px;
 $fontSizes: (

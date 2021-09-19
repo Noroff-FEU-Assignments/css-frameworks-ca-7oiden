@@ -1,26 +1,4 @@
-.contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-top: 25px;
-
-  @media (min-width: getBreakpoint(medium)) {
-    flex-direction: row;
-    width: getWidth(largeScreen);
-    margin: 0 auto;
-    gap: 4rem;
-    padding-top: 50px;
-  }
-
-  @media (min-width: getBreakpoint(xlarge)) {
-    width: getWidth(xlargeScreen);
-  }
-
-  @media (min-width: getBreakpoint(xxlarge)) {
-    width: getWidth(xxlargeScreen);
-  }
-}
-
-.contact-form-wrapper {
+.form-wrapper {
   order: 2;
 
   @media (min-width: getBreakpoint(medium)) {
@@ -32,36 +10,36 @@
     order: 1;
     flex: 1;
   }
-}
 
-.contact-form-header {
-  padding-left: getWidth(paddingSmallScreen);
-  padding-top: 50px;
+  &-header {
+    padding-left: getWidth(paddingSmallScreen);
+    padding-top: 50px;
 
-  @media (min-width: getBreakpoint(medium)) {
-    padding-top: 0;
-    padding-left: 0;
-  }
-}
-
-.contact-form-container {
-  width: 100%;
-  margin-top: 1rem;
-  padding: 0 getWidth(paddingSmallScreen);
-  background-color: getColor(navbar);
-  border-radius: 3px;
-
-  @include dropShadow(6px, 6px, 0.1);
-
-  @media (min-width: getBreakpoint(large)) {
-    padding: 0 getWidth(paddingLargeScreen);
+    @media (min-width: getBreakpoint(medium)) {
+      padding-top: 0;
+      padding-left: 0;
+    }
   }
 
-  @media (min-width: getBreakpoint(xlarge)) {
-    padding: 0 getWidth(paddingXlargeScreen);
-  }
-  @media (min-width: getBreakpoint(xxlarge)) {
-    padding: 0 getWidth(paddingXxlargeScreen);
+  &-container {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0 getWidth(paddingSmallScreen);
+    background-color: getColor(navbar);
+    border-radius: 3px;
+
+    @include dropShadow(6px, 6px, 0.1);
+
+    @media (min-width: getBreakpoint(large)) {
+      padding: 0 getWidth(paddingLargeScreen);
+    }
+
+    @media (min-width: getBreakpoint(xlarge)) {
+      padding: 0 getWidth(paddingXlargeScreen);
+    }
+    @media (min-width: getBreakpoint(xxlarge)) {
+      padding: 0 getWidth(paddingXxlargeScreen);
+    }
   }
 }
 
@@ -145,49 +123,3 @@
   }
 }
 
-.contact-info {
-  &-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 0;
-    padding-left: getWidth(paddingSmallScreen);
-    order: 1;
-
-    @media (min-width: getBreakpoint(medium)) {
-      order: 2;
-      flex: 1;
-      padding-left: 0;
-      padding-top: 100px;
-    }
-  }
-
-  &-items {
-    display: flex;
-    align-items: center;
-
-    &:last-child {
-      align-items: baseline;
-    }
-
-    & i {
-      font-size: getFontSizes(icons);
-    }
-  }
-
-  &-icon {
-    width: 60px;
-    margin-top: 0.5rem;
-    height: 60px;
-  }
-
-  &-address {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    & p {
-      margin: 0;
-      padding: 0;
-    }
-  }
-}

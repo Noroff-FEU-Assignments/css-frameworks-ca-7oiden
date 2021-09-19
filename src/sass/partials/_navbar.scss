@@ -1,3 +1,25 @@
+.nav-container {
+  width: getWidth(smallScreen);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: getBreakpoint(large)) {
+    width: getWidth(largeScreen);
+  }
+
+  @media (min-width: getBreakpoint(xlarge)) {
+    width: getWidth(xlargeScreen);
+  }
+
+  @media (min-width: getBreakpoint(xxlarge)) {
+    width: getWidth(xxlargeScreen);
+  }
+}
+
 .navbar {
   position: relative;
   background-color: getColor(navbar);
@@ -43,27 +65,62 @@
       background-color: getColor(primary);
     }
   }
-}
 
-.nav-container {
-  width: getWidth(smallScreen);
-  height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0;
-
-  @media (min-width: getBreakpoint(large)) {
-    width: getWidth(largeScreen);
+  &-brand {
+    font-family: $fontMainHeadings;
+    color: getColor(primary) !important;
+    font-style: italic;
+    font-weight: bold;
+    padding: 0 1.5rem 0 0;
+    margin: 0;
+    text-decoration: none;
   }
 
-  @media (min-width: getBreakpoint(xlarge)) {
-    width: getWidth(xlargeScreen);
-  }
+  &-links a {
+    color: getColor(darkText);
+    text-decoration: none;
+    border-radius: 3px;
+    margin: 0 0 0.75rem 0;
+    padding: 0.75rem 0 0.75rem getWidth(paddingSmallScreen);
 
-  @media (min-width: getBreakpoint(xxlarge)) {
-    width: getWidth(xxlargeScreen);
+    @media (min-width: getBreakpoint(large)) {
+      margin: 0 0 0 1.5rem;
+      padding: 0.25rem 1rem;
+    }
+
+    &:hover {
+      color: getColor(darkText);
+      background-color: getColor(secondary);
+    }
+
+    &:active {
+      color: getColor(darkText);
+      background-color: getColor(secondary);
+    }
+
+    //have excluded active bg on small screens
+    &.active {
+      @media (min-width: getBreakpoint(large)) {
+        color: getColor(darkText);
+        background-color: getColor(secondary);
+      }
+    }
+
+    &:first-of-type {
+      margin-top: 1rem;
+
+      @media (min-width: getBreakpoint(large)) {
+        margin-top: 0;
+      }
+    }
+
+    &:last-of-type {
+      margin-bottom: 3rem;
+
+      @media (min-width: getBreakpoint(large)) {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 
@@ -86,64 +143,8 @@
   }
 }
 
-.navbar-links a {
-  color: getColor(darkText);
+.brand-link {
   text-decoration: none;
-  border-radius: 3px;
-  margin: 0 0 0.75rem 0;
-  padding: 0.75rem 0 0.75rem getWidth(paddingSmallScreen);
-
-  @media (min-width: getBreakpoint(large)) {
-    margin: 0 0 0 1.5rem;
-    padding: 0.25rem 1rem;
-  }
-
-  &:hover {
-    color: getColor(darkText);
-    background-color: getColor(secondary);
-  }
-
-  &:active {
-    color: getColor(darkText);
-    background-color: getColor(secondary);
-  }
-
-  //have excluded active bg on small screens
-  &.active {
-    @media (min-width: getBreakpoint(large)) {
-      color: getColor(darkText);
-      background-color: getColor(secondary);
-    }
-  }
-
-  &:first-of-type {
-    margin-top: 1rem;
-
-    @media (min-width: getBreakpoint(large)) {
-      margin-top: 0;
-    }
-  }
-
-  &:last-of-type {
-    margin-bottom: 3rem;
-
-    @media (min-width: getBreakpoint(large)) {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.brand {
-  font-family: $fontMainHeadings;
-  color: getColor(primary) !important;
-  font-style: italic;
-  font-weight: bold;
-  padding: 0 1.5rem 0 0;
-  margin: 0;
-
-  &-link {
-    text-decoration: none;
-  }
 }
 
 #navbar-form-input {

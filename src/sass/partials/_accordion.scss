@@ -1,5 +1,4 @@
 .accordion {
-  //border: 2px solid black;
   border-radius: 10px !important;
 
   @include dropShadow(16px, 22px, 0.06);
@@ -27,8 +26,8 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
     border-top: 1px solid getColor(primary);
   }
 

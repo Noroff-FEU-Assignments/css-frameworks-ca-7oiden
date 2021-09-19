@@ -1,0 +1,46 @@
+.contact-info {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+    padding-left: getWidth(paddingSmallScreen);
+    order: 1;
+
+    @media (min-width: getBreakpoint(medium)) {
+      order: 2;
+      flex: 1;
+      padding-left: 0;
+      padding-top: 100px;
+    }
+  }
+
+  &-items {
+    display: flex;
+    align-items: center;
+
+    &:last-child {
+      align-items: baseline;
+    }
+
+    & i {
+      font-size: getFontSizes(icons);
+    }
+  }
+
+  &-icon {
+    width: 60px;
+    margin-top: 0.5rem;
+    height: 60px;
+  }
+
+  &-address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
