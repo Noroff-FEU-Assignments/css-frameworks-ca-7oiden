@@ -15,7 +15,7 @@ import News8 from "../../images/news/news-8.jpg";
 function CardCustomizedGrid() {
   return (
     <Row>
-      <Col sm={6} md={6} lg={4} xl={3}>
+      <Col sm={6} lg={4} xl={3}>
         <Card>
           <div
             className="card-img-top"
@@ -29,7 +29,7 @@ function CardCustomizedGrid() {
         </Card>
       </Col>
 
-      <Col sm={6} md={6} lg={4} xl={3}>
+      <Col sm={6} lg={4} xl={3}>
         <Card>
           <div
             className="card-img-top"
@@ -43,7 +43,7 @@ function CardCustomizedGrid() {
         </Card>
       </Col>
 
-      <Col sm={6} md={6} lg={4} xl={3}>
+      <Col sm={6} lg={4} xl={3}>
         <Card>
           <div
             className="card-img-top"
@@ -57,7 +57,7 @@ function CardCustomizedGrid() {
         </Card>
       </Col>
 
-      <Col sm={6} md={6} lg={4} xl={3}>
+      <Col sm={6} lg={4} xl={3}>
         <Card>
           <div
             className="card-img-top"
@@ -71,7 +71,7 @@ function CardCustomizedGrid() {
         </Card>
       </Col>
 
-      <Col sm={6} md={6} lg={4} xl={3}>
+      <Col sm={6} lg={4} xl={3}>
         <Card>
           <div
             className="card-img-top"
@@ -84,7 +84,7 @@ function CardCustomizedGrid() {
           </Card.Body>
         </Card>
       </Col>
-      <Col sm={6} md={6} lg={4} xl={3}>
+      <Col sm={6} lg={4} xl={3}>
         <Card>
           <div
             className="card-img-top"
@@ -97,7 +97,7 @@ function CardCustomizedGrid() {
           </Card.Body>
         </Card>
       </Col>
-      <Col sm={6} md={6} lg={4} xl={3}>
+      <Col sm={6} lg={4} xl={3}>
         <Card>
           <div
             className="card-img-top"
@@ -110,7 +110,7 @@ function CardCustomizedGrid() {
           </Card.Body>
         </Card>
       </Col>
-      <Col sm={6} md={6} lg={4} xl={3}>
+      <Col sm={6} lg={4} xl={3}>
         <Card>
           <div
             className="card-img-top"

@@ -1,6 +1,9 @@
 @import "./partials/custom";
 
-//bootstrap variables overrides
+//bootstrap variables overrides:
+
+//grid
+$grid-gutter-width: 2rem;
 
 //brand
 $navbar-brand-font-size: getFontSizes(medium);
@@ -47,7 +50,7 @@ $pagination-color: getColor(primary);
 $pagination-active-color: getColor(secondary);
 $pagination-active-bg: getColor(primary);
 $pagination-padding-y: 0.75rem;
-$pagination-padding-x: 1rem;
+$pagination-padding-x: 1.35rem;
 $pagination-border-color: getColor(primary);
 $pagination-border-radius: 4px;
 $pagination-active-border-color: getColor(primary);

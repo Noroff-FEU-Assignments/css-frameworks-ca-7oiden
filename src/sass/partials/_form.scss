@@ -41,8 +41,10 @@
 
 .contact-form-container {
   width: 100%;
+  margin-top: 1rem;
   padding: 2rem getWidth(paddingSmallScreen);
   background-color: getColor(navbar);
+  border-radius: 3px;
 
   @include dropShadow(6px, 6px, 0.1);
 
