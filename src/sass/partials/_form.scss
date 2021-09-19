@@ -8,7 +8,7 @@
     flex-direction: row;
     width: getWidth(largeScreen);
     margin: 0 auto;
-    gap: 50px;
+    gap: 4rem;
   }
 
   @media (min-width: getBreakpoint(xlarge)) {
@@ -53,7 +53,10 @@
   }
 
   @media (min-width: getBreakpoint(xlarge)) {
-    padding: 2rem getWidth(paddingxLargeScreen);
+    padding: 2rem getWidth(paddingXlargeScreen);
+  }
+  @media (min-width: getBreakpoint(xxlarge)) {
+    padding: 2rem getWidth(paddingXxlargeScreen);
   }
 }
 

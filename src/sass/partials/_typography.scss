@@ -2,18 +2,8 @@ h1 {
   font-family: $fontMainHeadings;
   font-size: getFontSizes(headings);
   color: getColor(primary);
-  margin: 0;
-  padding-bottom: 1rem;
-}
-
-h1.contact-heading {
-  margin-top: 50px;
-  padding-left: getWidth(paddingSmallScreen);
-
-  @media (min-width: getBreakpoint(large)) {
-    padding-left: 0;
-    padding-bottom: 0;
-  }
+  padding-top: 0;
+  padding-bottom: 25px;
 }
 
 .main-text {
@@ -38,8 +28,8 @@ h1.contact-heading {
   &-links {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    padding: 0;
 
     @media (min-width: getBreakpoint(large)) {
       justify-content: flex-start;
@@ -51,8 +41,7 @@ h1.contact-heading {
     text-transform: uppercase;
     color: getColor(darkText);
     font-size: getFontSizes(icons);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-right: 1.5rem;
 
     @media (min-width: getBreakpoint(large)) {
     }
