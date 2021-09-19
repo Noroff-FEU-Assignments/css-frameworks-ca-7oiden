@@ -1,5 +1,5 @@
 .card {
-  height: 400px;
+  height: 420px;
   border-radius: 10px;
   margin-bottom: 3rem;
   border: none;
@@ -11,24 +11,36 @@
   }
 
   &-body {
-    padding: 1rem 2rem auto 1rem;
+    width: 85%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 0.75rem;
+    padding-bottom: 1rem;
   }
 
   &-img-top {
     height: 50%;
     border-radius: 10px 10px 0 0;
     background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
   }
 
   &-title {
     color: getColor(darkText);
     font-size: getFontSizes(medium);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin: 0;
+    padding: 0;
   }
 
   &-text {
     font-size: getFontSizes(cardText);
+    margin: 0;
+    padding: 0;
   }
 
   &-button {
@@ -38,9 +50,9 @@
     border: none;
     border-radius: 4px;
     text-transform: uppercase;
-    margin-top: 25px;
-    margin-bottom: 1rem;
     position: relative;
+    margin: 0;
+    padding: 0;
 
     &::after {
       content: "";
